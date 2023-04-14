@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Git Tutorial</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Link to external CSS stylesheet -->
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<h1>Git Tutorial</h1>
+		<nav>
+			<ul>
+				<li><a href="#what-is-git">What is Git?</a></li>
+				<li><a href="#creating-a-git-repository">Creating a Git Repository</a></li>
+				<li><a href="#adding-files-to-the-repository">Adding Files to the Repository</a></li>
+				<li><a href="#committing-changes">Committing Changes</a></li>
+				<li><a href="#working-with-branches">Working with Branches</a></li>
+				<li><a href="#merging-branches">Merging Branches</a></li>
+				<li><a href="#pushing-changes-to-github">Pushing Changes to GitHub</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section id="what-is-git">
+			<h2>What is Git?</h2>
+			<p>Git is a version control system that allows you to track changes in your code and collaborate with other developers. With Git, you can create a history of changes, experiment with new ideas, and revert to previous versions if something goes wrong.</p>
+		</section>
+		<section id="creating-a-git-repository">
+			<h2>Creating a Git Repository</h2>
+			<p>Before you can start using Git, you need to create a Git repository. A Git repository is a folder where you keep your code and all the versions of that code. You can create a new Git repository by following these steps:</p>
+			<ol>
+				<li>Open your terminal or command prompt.</li>
+				<li>Navigate to the folder where you want to create your Git repository.</li>
+				<li>Type <code>git init</code> and press Enter. This will initialize a new Git repository in the current folder.</li>
+			</ol>
+		</section>
+		<section id="adding-files-to-the-repository">
+			<h2>Adding Files to the Repository</h2>
+			<p>Once you have created a Git repository, you can add files to it. In this example, we will add an HTML file and a CSS file to the repository. Here's how:</p>
+			<ol>
+				<li>Create a new file named <code>index.html</code> in your project folder.</li>
+				<li>Create a new file named <code>style.css</code> in your project folder.</li>
+				<li>Open your terminal or command prompt.</li>
+				<li>Navigate to your project folder.</li>
+				<li>Type <code>git add index.html</code> and press Enter. This tells Git to add the <code>index.html</code> file to the repository.</li>
+				<li>Type <code>git add style.css</code> and press Enter. This tells Git to add the <code>style.css</code> file to the repository.</li>
+			</ol>
+		</section>
+		<section id="committing-changes">
+			<h2>Committing Changes</h2>
+      <p>After adding files to the repository, you need to commit the changes to create a snapshot of the repository at that point in time. Here's how:</p>
+			<ol>
+				<li>Open your terminal or command prompt.</li>
+				<li>Navigate to your project folder.</li>
+				<li>Type <code>git commit -m "Initial commit"</code> and press Enter. This creates a new commit with the message "Initial commit".</li>
+			</ol>
+		</section>
+		<section id="working-with-branches">
+			<h2>Working with Branches</h2>
+			<p>A branch is a copy of your repository that allows you to work on a new feature or experiment with new ideas without affecting the main branch. Here's how to create and switch to a new branch:</p>
+			<ol>
+				<li>Open your terminal or command prompt.</li>
+				<li>Navigate to your project folder.</li>
+				<li>Type <code>git branch feature-branch</code> and press Enter. This creates a new branch named "feature-branch".</li>
+				<li>Type <code>git checkout feature-branch</code> and press Enter. This switches to the "feature-branch" branch.</li>
+			</ol>
+		</section>
+		<section id="merging-branches">
+			<h2>Merging Branches</h2>
+			<p>After you have made changes to a branch, you can merge those changes back into the main branch. Here's how:</p>
+			<ol>
+				<li>Open your terminal or command prompt.</li>
+				<li>Navigate to your project folder.</li>
+				<li>Type <code>git checkout main</code> and press Enter. This switches to the main branch.</li>
+				<li>Type <code>git merge feature-branch</code> and press Enter. This merges the changes from the "feature-branch" branch into the main branch.</li>
+			</ol>
+		</section>
+		<section id="pushing-changes-to-github">
+			<h2>Pushing Changes to GitHub</h2>
+			<p>GitHub is a popular platform for hosting Git repositories and collaborating with other developers. Here's how to push your changes to a GitHub repository:</p>
+			<ol>
+				<li>Create a new repository on GitHub.</li>
+				<li>Copy the repository URL.</li>
+				<li>Open your terminal or command prompt.</li>
+				<li>Navigate to your project folder.</li>
+				<li>Type <code>git remote add origin <repository-url></code> and press Enter. This tells Git to add the GitHub repository as a remote location.</li>
+				<li>Type <code>git push -u origin main</code> and press Enter. This pushes the changes in the local main branch to the GitHub repository.</li>
+			</ol>
+		</section>
+	</main>
+	<footer>
+		<p>Git Tutorial by <a href="https://github.com/raphaelpavani" target="_blank">Raphael Pavani</a></p>
+	</footer>
+</body>
+</html>
